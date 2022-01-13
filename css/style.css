@@ -1,0 +1,291 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+background-color:white;
+font-size: 18px;
+margin: 0;
+padding-bottom: 50px;
+color: white;
+}
+
+h1{
+padding: 20px;
+text-align: center;
+background-color: white;
+color: black;
+margin-top: 20px;
+font-size: 20px;
+font-weight: lighter;
+}
+
+
+h2{
+font-size: 32px;
+line-height: 1.5;
+text-align: center;
+display: block;
+background-color: white;
+color: black;
+}
+
+p{
+  text-align: center;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  background-color: #89A1EF;
+  padding: 10px;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+  opacity: 100%;
+}
+
+img{
+  padding: 20px;
+  border: 1px solid white;
+  display: block;
+  margin: 0 auto; 
+  width: 300px;
+  animation-name: FadeIn;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+footer{
+background-color: white;
+padding-top: 30px;
+padding-bottom: 30px;
+text-align: center;
+margin-top: 150px;
+}
+footer p{
+  color: black;
+}
+/* NAVIGATION */
+nav{
+  background-color:white;
+  padding: 30px;    
+  text-align: center;   
+  }
+
+nav a{
+color: black;
+text-decoration: none;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+body{
+background-attachment: fixed; 
+background-position: center; 
+background-size: cover; 
+color: white;
+background-image: url("../imgs/champs.jpg");
+background-color: #89A1EF;
+background-blend-mode: luminosity;
+background-repeat: no-repeat;
+grid-column: 1 / -1;
+grid-row: 1 / span 1;
+}
+
+header{
+  padding: 25px 0;    
+  text-align: center;   
+  height: 800px;
+  
+}
+
+nav li{
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.nav .current {
+  font-weight: bold;
+  background-position: center;
+  background-color: #89A1EF;
+}
+
+/* contact */
+
+/* contact */
+
+@keyframes FadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+
+
+/* flipcard */
+.flip-card {
+  background-color: transparent;
+  width: 580px;
+  height: 1065px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #008CCC;
+  background-color: azure;
+  color: white;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #4470ff;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* flipcard */
+
+/* skip */
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+  }
+    
+  .skip a:focus{
+  position:absolute;
+  top:0px;
+  }
+/*skip */
+  
+.follow {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width:600px) {
+  nav{
+    background-color:white;
+    padding: 20px;    
+    text-align: center;
+  }
+
+  nav li{
+    padding: 4px;
+    border: 1px solid black;
+    margin-top: 0px;
+    display:inline-block;
+  }
+
+  img{
+    padding: 40px;
+    border: 1px solid white;
+    display: block;
+    margin: 0 auto; 
+    width: 500px;
+  }
+
+  footer{
+    margin-top: 50px;
+    }
+}
+
+@media (min-width:1025px){
+  .grid-container {
+    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #89A1EF;
+    padding: 10px;
+    border-bottom: 20px solid white;
+  }
+
+  nav{
+    background-color:white;
+    padding: 20px;    
+    text-align: center;
+    width:60%;
+    margin: 0 auto;
+  }
+
+  nav li{
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 0px;
+    display:inline-block;
+  }
+  
+  h1{
+    width:50%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  header{
+    margin-top:350px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  img {
+    -webkit-animation: initial;
+    animation: initial;
+  }
+  body{
+    background-attachment: scroll; 
+    background-position: center; 
+    background-size: cover; 
+    color: white;
+    background-image: url("../imgs/champs.jpg");
+    background-color: #89A1EF;
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+  }
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:active .flip-card-inner,
+  .flip-card:focus .flip-card-inner {
+    transform: none;
+  }
+
+}

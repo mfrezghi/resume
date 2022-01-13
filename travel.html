@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--  TIP 
+	You will find any errors from the head section using
+	the console. -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imgs/favicon.ico">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FD8FFFF5KM"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-FD8FFFF5KM');
+	</script>
+	<title>Travel</title>
+</head>
+<body>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+	<header>
+		<nav>
+			<ul class="nav">
+				<li><a href = "index.html">About Me</a></li>
+				<li class="current"><a  href = "travel.html">Education</a></li>
+				<li><a href = "friends.html">Experience</a></li>
+				<li><a href = "activities.html">Activities</a></li>
+				<li><a href = "contact.html">Contact</a></li>
+
+			</ul>
+		</nav>
+		
+		<h1>My favorite places that I've traveled</h1>
+	</header>
+	<main>
+		<h2 id="main"> Puerto Rico</h2>
+			<div class="grid-container">	
+					<img src="imgs/Copy of IMG_5789.JPG" alt = "Puerto Rico" width="500">    
+					<img src="imgs/Copy of IMG_7668.png" alt = "Puerto Rico restaurant" width="500">
+			</div>
+			<h2>New York</h2>
+			<div class="grid-container">
+				
+					<img src="imgs/IMG_5645 (1).JPG" alt = "New York Skyline" width="500">
+			</div>  
+			<h2>Montana</h2>
+
+			<div class="grid-container">
+				<img src="imgs/Screenshot_20201123-024104.png" alt = "Montana" width="500">
+			</div>
+			<h2>Sleeping Bear Dunes</h2>
+
+			<div class="grid-container">
+					<img src="imgs/Screenshot_20210725-225548.png" alt = "Sleeping Bear Dunes" width="500">
+			</div>
+			<h2>Utah</h2>
+
+			<div class="grid-container">
+					<img src="imgs/Snapchat-839534325.jpg" alt = "Arches National Park" width="500">
+					<img src="imgs/ut.png" alt = "Utah arch" width="500">
+			</div>
+			<h2>Colorado</h2>
+			<div class="grid-container">		
+				<img src="imgs/snapchat-2005164962.jpg" alt = "Utah waterfall" width="500">
+				<img src="imgs/uta.png" alt = "Utah sky view" width="500">
+		</div>
+	</main>	
+	
+
+	<div class = "follow">
+		<img src="imgs/football.jpg">
+	</div>
+
+
+	<script>
+		var ball = document.getElementsByClassName("follow");
+		document.onmousemove = function(){
+			var x = event.clientX * 100 / window.innerWidth + "%";
+			var y = event.clientY * 100 / window.innerHeight + "%";
+			for (var i=0;i<2;i++){
+				ball[i].style.left = x;
+				ball[i].style.top = y;
+			}
+		}
+	</script>
+
+
+	<footer>
+		<p>Medhanie Frezghi 2021</p>
+	</footer>
+</body>
+</html>
